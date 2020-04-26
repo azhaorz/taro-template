@@ -1,0 +1,22 @@
+{
+  "extends": ["taro", "plugin:@typescript-eslint/recommended", "plugin:prettier/recommended"],
+  "rules": {
+    "no-unused-vars": ["error", { "varsIgnorePattern": "Taro" }],
+    "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx", ".tsx"] }],
+    "@typescript-eslint/explicit-function-return-type": 0,
+    "@typescript-eslint/no-explicit-any": 0,
+    "import/no-commonjs": 0,
+    "@typescript-eslint/no-var-requires": 0,
+    "@typescript-eslint/no-empty-function": 0,
+    "@typescript-eslint/ban-ts-ignore": 0,
+    "no-shadow": 0
+  },
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
+    },
+    "useJSXTextNode": true,
+    "project": "./tsconfig.json"
+  }
+}
