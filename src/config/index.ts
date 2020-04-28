@@ -1,7 +1,7 @@
-import { merge } from 'lodash-es'
-import dev from './dev'
-import prod from './prod'
-import uris from './uris'
+import { merge } from 'lodash-es';
+import dev from './dev';
+import prod from './prod';
+import uris from './uris';
 
 const config = {
   uris,
@@ -32,14 +32,14 @@ const config = {
       loginPath: '/pages/login/act-pwd',
     },
   },
-}
+};
 
 if (process.env.NODE_ENV === 'development') {
-  merge(config, dev)
-  console.log('开发环境')
+  merge(config, dev);
+  console.log('开发环境');
 } else {
-  merge(config, prod)
-  console.log('生产环境')
+  merge(config, prod);
+  console.log('生产环境');
 }
 
-export default config
+export default config;

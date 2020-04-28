@@ -1,34 +1,34 @@
-import { create } from 'dva-core'
-import { createLogger } from 'redux-logger'
-import createLoading from 'dva-loading'
+import { create } from 'dva-core';
+import { createLogger } from 'redux-logger';
+import createLoading from 'dva-loading';
 
-let app, store, dispatch, registered
+let app, store, dispatch, registered;
 
 function createApp(options?: any) {
-  const { models } = options
+  const { models } = options;
   if (process.env.NODE_ENV === 'development') {
-    options.onAction = [createLogger()]
+    options.onAction = [createLogger()];
   }
   app = create({
     ...options,
-  })
-  app.use(createLoading({}))
+  });
+  app.use(createLoading({}));
 
-  if (!registered) models.forEach(model => app.model(model))
-  registered = true
-  app.start()
+  if (!registered) models.forEach(model => app.model(model));
+  registered = true;
+  app.start();
 
-  store = app._store
-  app.getStore = () => store
+  store = app._store;
+  app.getStore = () => store;
 
-  dispatch = store.dispatch
-  app.dispatch = dispatch
-  return app
+  dispatch = store.dispatch;
+  app.dispatch = dispatch;
+  return app;
 }
 
 export default {
   createApp,
   getDispatch() {
-    return app.dispatch
+    return app.dispatch;
   },
-}
+};

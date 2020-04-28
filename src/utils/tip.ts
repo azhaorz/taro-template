@@ -1,16 +1,16 @@
-import Taro from '@tarojs/taro'
-import config from '@/config'
+import Taro from '@tarojs/taro';
+import config from '@/config';
 
-const { confirmColor, cancelColor } = config.tip
+const { confirmColor, cancelColor } = config.tip;
 
 /**
  * loading类型
  */
-type loadingType = 'normal' | 'nav'
+type loadingType = 'normal' | 'nav';
 
 export default class Tip {
-  static isNormalLoading = false
-  static isNavLoading = false
+  static isNormalLoading = false;
+  static isNavLoading = false;
 
   /**
    * 小提示
@@ -23,8 +23,8 @@ export default class Tip {
       icon: 'none',
       mask: true,
       duration,
-    })
-    return new Promise(resolve => setTimeout(resolve, duration))
+    });
+    return new Promise(resolve => setTimeout(resolve, duration));
   }
 
   /**
@@ -38,8 +38,8 @@ export default class Tip {
       icon: 'success',
       mask: true,
       duration,
-    })
-    return new Promise(resolve => setTimeout(resolve, duration))
+    });
+    return new Promise(resolve => setTimeout(resolve, duration));
   }
 
   /**
@@ -49,16 +49,16 @@ export default class Tip {
    */
   static loading(title = '', type: loadingType = 'normal') {
     if (type === 'normal') {
-      if (Tip.isNormalLoading) return
-      Tip.isNormalLoading = true
+      if (Tip.isNormalLoading) return;
+      Tip.isNormalLoading = true;
       Taro.showLoading({
         title: title,
         mask: true,
-      })
+      });
     } else {
-      if (Tip.isNavLoading) return
-      Tip.isNavLoading = true
-      Taro.showNavigationBarLoading()
+      if (Tip.isNavLoading) return;
+      Tip.isNavLoading = true;
+      Taro.showNavigationBarLoading();
     }
   }
 
@@ -69,16 +69,16 @@ export default class Tip {
   static loaded(type: loadingType = 'normal') {
     if (type === 'normal') {
       if (Tip.isNormalLoading) {
-        Tip.isNormalLoading = false
-        Taro.hideLoading()
+        Tip.isNormalLoading = false;
+        Taro.hideLoading();
       }
     } else {
       if (Tip.isNavLoading) {
-        Taro.hideNavigationBarLoading()
+        Taro.hideNavigationBarLoading();
       }
     }
     // 隐藏动画大约500ms，避免后面直接toast时的显示bug
-    return new Promise(resolve => setTimeout(resolve, 500))
+    return new Promise(resolve => setTimeout(resolve, 500));
   }
 
   /**
@@ -98,12 +98,12 @@ export default class Tip {
           cancelText,
           confirmColor,
           cancelColor,
-        })
-        resolve(confirm)
+        });
+        resolve(confirm);
       } catch (error) {
-        reject(error)
+        reject(error);
       }
-    })
+    });
   }
 
   /**
@@ -121,11 +121,11 @@ export default class Tip {
           confirmText,
           showCancel: false,
           confirmColor,
-        })
-        resolve(confirm)
+        });
+        resolve(confirm);
       } catch (error) {
-        reject(error)
+        reject(error);
       }
-    })
+    });
   }
 }

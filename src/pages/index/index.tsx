@@ -1,17 +1,17 @@
-/* eslint-disable react/jsx-boolean-value */
-import Taro, { useEffect } from '@tarojs/taro'
-import { View } from '@tarojs/components'
-import { useDispatch, useSelector } from '@tarojs/redux'
+import Taro from '@tarojs/taro';
+import { View } from '@tarojs/components';
 
-import styles from './index.scss'
+import BaseLayout from '@/layout/BaseLayout';
+import styles from './index.scss';
 
 export const Index: Taro.FC = () => {
-  const demoState = useSelector(({ demo: { demoState } }) => demoState)
-  const dispatch = useDispatch()
-  useEffect(() => {
-    dispatch({ type: 'demo/demoEffect', payload: { demoState: 'updated' } })
-  }, [dispatch])
-  return <View className={styles.index}>Index {demoState}</View>
-}
+  return (
+    <BaseLayout>
+      <View className={styles.wrap}>
+        <View>Index</View>
+      </View>
+    </BaseLayout>
+  );
+};
 
-export default Index
+export default Index;

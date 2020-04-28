@@ -25,6 +25,8 @@
     "dev:rn": "npm run build:rn -- --watch",
     "dev:qq": "npm run build:qq -- --watch",
     "dev:quickapp": "npm run build:quickapp -- --watch",
+    "tep": "node scripts/template",
+    "fc": "node scripts/function-component",
     "commit": "npx git-cz",
     "log": "npx conventional-changelog -p angular -i ./CHANGELOG.md -s"
   },

@@ -9,7 +9,9 @@
     "@typescript-eslint/no-var-requires": 0,
     "@typescript-eslint/no-empty-function": 0,
     "@typescript-eslint/ban-ts-ignore": 0,
-    "no-shadow": 0
+    "no-shadow": 0,
+    "react/no-multi-comp": 0,
+    "@typescript-eslint/interface-name-prefix": 0
   },
   "parser": "@typescript-eslint/parser",
   "parserOptions": {

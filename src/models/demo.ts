@@ -1,4 +1,4 @@
-import { apiGetDemo1 } from '@/services/demo'
+import { apiGetDemo1 } from '@/services/demo';
 
 export default {
   namespace: 'demo',
@@ -8,13 +8,13 @@ export default {
   effects: {
     *demoEffect({ payload }, { call, put }) {
       try {
-        const res = yield call(apiGetDemo1, payload)
-        console.log(res)
+        const res = yield call(apiGetDemo1, payload);
+        console.log(res);
       } catch (error) {
-        console.log(error)
+        console.log(error);
       }
 
-      yield put({ type: 'demoReducer', payload })
+      yield put({ type: 'demoReducer', payload });
     },
   },
   reducers: {
@@ -22,7 +22,7 @@ export default {
       return {
         ...state,
         ...payload,
-      }
+      };
     },
   },
-}
+};
