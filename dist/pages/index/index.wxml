@@ -1,3 +1,0 @@
-<block wx:if="{{$taroCompReady}}">
-    <view class="{{styles.index}}">Index {{demoState}}</view>
-</block>
