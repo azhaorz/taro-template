@@ -34,6 +34,8 @@ const config = {
   },
 };
 
+console.log(process.env.NODE_ENV);
+
 if (process.env.NODE_ENV === 'development') {
   merge(config, dev);
   console.log('开发环境');

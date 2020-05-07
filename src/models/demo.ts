@@ -1,4 +1,4 @@
-import { apiGetDemo1 } from '@/services/demo';
+import { apiMock } from '@/services/demo';
 
 export default {
   namespace: 'demo',
@@ -8,7 +8,7 @@ export default {
   effects: {
     *demoEffect({ payload }, { call, put }) {
       try {
-        const res = yield call(apiGetDemo1, payload);
+        const res = yield call(apiMock, payload);
         console.log(res);
       } catch (error) {
         console.log(error);

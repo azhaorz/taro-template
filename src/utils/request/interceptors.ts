@@ -4,6 +4,7 @@ import HTTP_STATUS from './http_status';
 const customInterceptor = (chain: Taro.Chain): any => {
   const requestParams = chain.requestParams;
   requestParams.url = requestParams.baseUrl + requestParams.url;
+  console.log(requestParams);
 
   return chain.proceed(requestParams).then(res => {
     const { statusCode, data } = res;

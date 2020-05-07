@@ -36,7 +36,19 @@ const config = {
       ],
     ],
   },
-  plugins: [],
+  plugins: [
+    // [
+    //   '@tarojs/plugin-mock',
+    //   {
+    //     mocks: {
+    //       '/api/mock': {
+    //         name: 'hanzhaorz',
+    //         desc: 'author',
+    //       },
+    //     },
+    //   },
+    // ],
+  ],
   defineConstants: {},
   mini: {
     postcss: {
@@ -82,6 +94,8 @@ const config = {
     '@': path.resolve(__dirname, '..', 'src'),
   },
 };
+
+console.log(process.env.NODE_ENV);
 
 module.exports = function (merge) {
   if (process.env.NODE_ENV === 'development') {

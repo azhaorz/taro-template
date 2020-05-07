@@ -1,5 +1,5 @@
 export default {
   request: {
-    baseURL: 'prod-url',
+    baseUrl: 'http://prod/',
   },
 };

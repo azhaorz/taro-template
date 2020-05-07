@@ -1,5 +1,5 @@
 export default {
   request: {
-    baseUrl: 'https://dev-url',
+    baseUrl: 'http://127.0.0.1/',
   },
 };
