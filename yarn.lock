@@ -1245,33 +1245,7 @@
     swiper "4.4.2"
     weui "^1.1.2"
 
-"@tarojs/helper@2.2.2":
-  version "2.2.2"
-  resolved "https://registry.yarnpkg.com/@tarojs/helper/-/helper-2.2.2.tgz#eb3540f659a42d3d697d8010c999661896a015a3"
-  integrity sha512-8SOlu74Rq6+ysY/GGqWII934sNlW9igyI6FhgpyYo2FXNLQacySLxR/sqnpTpo7PI8S792E6oEI9ESrfJwQGYA==
-  dependencies:
-    "@babel/core" "7.9.0"
-    "@babel/plugin-proposal-class-properties" "7.8.3"
-    "@babel/plugin-proposal-decorators" "7.8.3"
-    "@babel/plugin-proposal-object-rest-spread" "7.9.0"
-    "@babel/plugin-transform-runtime" "7.9.0"
-    "@babel/preset-env" "7.9.0"
-    "@babel/preset-typescript" "7.9.0"
-    "@babel/register" "7.9.0"
-    "@babel/runtime" "7.9.2"
-    "@tarojs/taro" "2.2.2"
-    babel-plugin-transform-react-jsx "^6.24.1"
-    chalk "3.0.0"
-    chokidar "3.3.1"
-    cross-spawn "7.0.1"
-    debug "4.1.1"
-    find-yarn-workspace-root "1.2.1"
-    fs-extra "8.1.0"
-    lodash "4.17.15"
-    resolve "1.15.1"
-    yauzl "2.10.0"
-
-"@tarojs/helper@^2.2.3":
+"@tarojs/helper@2.2.3", "@tarojs/helper@^2.2.3":
   version "2.2.3"
   resolved "https://registry.yarnpkg.com/@tarojs/helper/-/helper-2.2.3.tgz#5874708cb93cb28be80d7c8ebe5dc1e02ac17d21"
   integrity sha512-GMd+wQ79KSTsVU4tVWMkxudAIS5hhezntxbAw1IzUW4C0ZJ1u6ajt1AniH8hsBVDzZ7q1wTWhyJK4O5Vr6itbQ==
@@ -1347,13 +1321,13 @@
     webpack-chain "4.9.0"
     webpack-format-messages "^2.0.5"
 
-"@tarojs/plugin-mock@^0.0.3":
-  version "0.0.3"
-  resolved "https://registry.yarnpkg.com/@tarojs/plugin-mock/-/plugin-mock-0.0.3.tgz#af8e918d2e0407c54ec6d64a9bb3686a96499f50"
-  integrity sha512-lY9KHZ+fdcxItUsovxnNliGLQLoIFzh9eF9KkO4GxTZOet7UWT2AMT9sTSDYUgrw0XMWYrgjjN/f8SvUwuH2LQ==
+"@tarojs/plugin-mock@0.0.4":
+  version "0.0.4"
+  resolved "https://registry.yarnpkg.com/@tarojs/plugin-mock/-/plugin-mock-0.0.4.tgz#9d105e5f6ee9040ec5617cfd5a5ac7d6e85f6572"
+  integrity sha512-5eCrG1NIVDsRt6EDlR24GMnNZvgZ3jZ070LLCmN/fkuWGAQfNh/7hL+XwEdVbKx38Oox/1L09oAZdaFuEplkhA==
   dependencies:
-    "@tarojs/helper" "2.2.2"
-    "@tarojs/service" "2.2.2"
+    "@tarojs/helper" "2.2.3"
+    "@tarojs/service" "2.2.3"
     body-parser "^1.19.0"
     express "^4.17.1"
     get-port "^5.1.1"
@@ -1406,14 +1380,14 @@
   dependencies:
     scss-bundle "^3.0.2"
 
-"@tarojs/service@2.2.2":
-  version "2.2.2"
-  resolved "https://registry.yarnpkg.com/@tarojs/service/-/service-2.2.2.tgz#9814cd1e95634e168be7939c99e82540c713d39e"
-  integrity sha512-qzM+XfOrpZdhM8Hj8VarLY9GNCXV8bw9lTUdyJI+0M1tBBNWt3MdAj/bngrBPtkdocwWYXsgPuZMLTFWnV23PQ==
+"@tarojs/service@2.2.3":
+  version "2.2.3"
+  resolved "https://registry.yarnpkg.com/@tarojs/service/-/service-2.2.3.tgz#94c3f6d5b8204685b7fa75c28fddf1e7264cd8a7"
+  integrity sha512-MwH4r+7Jy2pEoE0Uqqq5OEVvNbKELj14srl6tjXXh1+8jnJIAB4eKsIqhzia+HRtybU2balysn4VHRA/JW1K9g==
   dependencies:
     "@hapi/joi" "17.1.1"
-    "@tarojs/helper" "2.2.2"
-    "@tarojs/taro" "2.2.2"
+    "@tarojs/helper" "^2.2.3"
+    "@tarojs/taro" "^2.2.3"
     fs-extra "8.1.0"
     lodash "4.17.15"
     resolve "1.15.1"
@@ -1513,13 +1487,6 @@
     lodash "^4.17.10"
     prop-types "^15.6.1"
 
-"@tarojs/taro@2.2.2":
-  version "2.2.2"
-  resolved "https://registry.yarnpkg.com/@tarojs/taro/-/taro-2.2.2.tgz#f71c308fb6caa335736e551ca24befe5480cb77d"
-  integrity sha512-T5hapwgUs2tTNItNZt6v+eqZdUK36S5C05DF/39XCRNw/t6CXPuG6qwiIuOIpeuZKx0BGSpK2gusHFbFINE5sw==
-  dependencies:
-    "@tarojs/utils" "2.2.2"
-
 "@tarojs/taro@2.2.3", "@tarojs/taro@^2.2.3":
   version "2.2.3"
   resolved "https://registry.yarnpkg.com/@tarojs/taro/-/taro-2.2.3.tgz#b85f4e6b972cf6a9128fe5c6aa395f542ab568bd"
@@ -1557,11 +1524,6 @@
     lodash "^4.17.5"
     prettier "^1.14.2"
     typescript "^3.2.2"
-
-"@tarojs/utils@2.2.2":
-  version "2.2.2"
-  resolved "https://registry.yarnpkg.com/@tarojs/utils/-/utils-2.2.2.tgz#018752e0bb2cd13696eaf9c1ef649e200431d5bf"
-  integrity sha512-c6rQtOLn5AZp5gG2BXRVTjTUVGmbvyCoaVbVgCIoTU0SX3ZNsVnWpBUP4of0ELktDEJj0ZGuQspy2TzEvp8apQ==
 
 "@tarojs/utils@^2.2.3":
   version "2.2.3"

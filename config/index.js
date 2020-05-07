@@ -37,17 +37,17 @@ const config = {
     ],
   },
   plugins: [
-    // [
-    //   '@tarojs/plugin-mock',
-    //   {
-    //     mocks: {
-    //       '/api/mock': {
-    //         name: 'hanzhaorz',
-    //         desc: 'author',
-    //       },
-    //     },
-    //   },
-    // ],
+    [
+      '@tarojs/plugin-mock',
+      {
+        mocks: {
+          '/mock/api': {
+            name: 'hanzhaorz',
+            desc: 'author',
+          },
+        },
+      },
+    ],
   ],
   defineConstants: {},
   mini: {
