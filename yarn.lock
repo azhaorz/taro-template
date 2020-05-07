@@ -1321,10 +1321,10 @@
     webpack-chain "4.9.0"
     webpack-format-messages "^2.0.5"
 
-"@tarojs/plugin-mock@0.0.4":
-  version "0.0.4"
-  resolved "https://registry.yarnpkg.com/@tarojs/plugin-mock/-/plugin-mock-0.0.4.tgz#9d105e5f6ee9040ec5617cfd5a5ac7d6e85f6572"
-  integrity sha512-5eCrG1NIVDsRt6EDlR24GMnNZvgZ3jZ070LLCmN/fkuWGAQfNh/7hL+XwEdVbKx38Oox/1L09oAZdaFuEplkhA==
+"@tarojs/plugin-mock@0.0.5":
+  version "0.0.5"
+  resolved "https://registry.yarnpkg.com/@tarojs/plugin-mock/-/plugin-mock-0.0.5.tgz#cc7f1070043f84457d6e3c3ece29c81c50211966"
+  integrity sha512-01YimpdeAWuMJWpDbAIN8QeUrCEpdSYfBzNYuhVKb99LMa4gfuDIWoEiyLjpNHRhaZSJrB/s2P1dGpQ+MfdRzA==
   dependencies:
     "@tarojs/helper" "2.2.3"
     "@tarojs/service" "2.2.3"
